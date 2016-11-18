@@ -10,8 +10,8 @@ import java.io.IOException;
  *
  */
 
-import static java.lang.System.*
-;public class FileReaderTest2_11 {
+import static java.lang.System.*;
+public class FileReaderTest2_11 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

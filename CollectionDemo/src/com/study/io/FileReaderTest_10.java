@@ -10,8 +10,9 @@ import java.io.IOException;
  *
  */
 
-import static java.lang.System.*
-;public class FileReaderTest_10 {
+import static java.lang.System.*;
+
+public class FileReaderTest_10 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -58,7 +59,9 @@ import static java.lang.System.*
 			try {
 				//关闭流资源，关闭之前会刷新内部缓存中的数据，将数据刷到目的地
 				//和flush的区别是：flush刷新后流还可以继续使用，close刷新后，会关闭流
-				fr.close();
+				if (fr!=null){
+					fr.close();
+				}
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
