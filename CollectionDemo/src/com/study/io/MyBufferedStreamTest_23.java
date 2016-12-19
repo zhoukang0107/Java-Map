@@ -17,6 +17,9 @@ public class MyBufferedStreamTest_23 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		Copy_01();
+	}
+	public static void Copy_01(){
 
 		BufferedInputStream bis = null;
 		BufferedOutputStream bos = null;
@@ -52,4 +55,7 @@ public class MyBufferedStreamTest_23 {
 		}
 	}
 
+	public static void Copy_02(){
+		
+	}
 }

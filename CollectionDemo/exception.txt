@@ -1,0 +1,3 @@
+java.lang.ArrayIndexOutOfBoundsException: 3
+	at com.study.io.ExceptionInfo_25.Test1(ExceptionInfo_25.java:22)
+	at com.study.io.ExceptionInfo_25.main(ExceptionInfo_25.java:14)
