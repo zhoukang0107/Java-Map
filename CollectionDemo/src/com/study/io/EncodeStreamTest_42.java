@@ -1,4 +1,4 @@
-package com.study.io;
+  package com.study.io;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -40,35 +40,49 @@ import java.util.Vector;
  *    所有的文字都用两个字节来表示，java语言使用的就是unicode
  * UTF-8:最多用三个字节来表示一个字符
  * 
+ * 编码：字符串变成字节数组
+ * 
+ * 
+ * 解码：字节数组变成字符串
+ * 
+ * 
+ * String-->byte[]    str.getBytes(charsetName);
+ * byte[]-->String    new String(byte[],charsetName);
+ * 
+ * 
  */
 
 
-public class EncodeStreamTest_40 {
+public class EncodeStreamTest_42 {
 
 	public static void main(String[] args) throws IOException, ClassNotFoundException {
 		// TODO Auto-generated method stub
-		writeText();
-		readText();
-	}
-	
-	private static void readText() throws IOException {
-		// TODO Auto-generated method stub
-		InputStreamReader isr = new InputStreamReader(new FileInputStream("utf8.txt"),"gbk");
-		char[] buff = new char[10];
-		int len = isr.read(buff);
-		sop(new String(buff,0,len));
-		isr.close();
+		EncodeStreamTest();
 	}
 
-	private static void writeText() throws IOException {
+	private static void EncodeStreamTest() throws UnsupportedEncodingException {
 		// TODO Auto-generated method stub
-		OutputStreamWriter osw = new OutputStreamWriter(new FileOutputStream("utf.txt"),"utf-8");
-		osw.write("你好");
-		osw.close();
+		String s = "联通";
+		byte[] b1 = s.getBytes();
+		byte[] b2 = s.getBytes("utf-8");
+		for (byte b : b1){
+			sop("b1:"+Integer.toBinaryString(b&255));   //联通的gbk编码二进制符合utf-8编码规则
+		}
+		for (byte b : b2){
+			sop("b2:"+Integer.toBinaryString(b&255));
+		}
+		System.out.println(Arrays.toString(b1));
+		System.out.println(Arrays.toString(b2));
+		sop("gbk:"+new String(b1,"gbk"));
+		sop("utf-8:"+new String(b1,"utf-8"));
+		sop("gbk:"+new String(b2,"gbk"));
+		sop("utf-8:"+new String(b2,"utf-8"));
+				
 	}
 
-	
-	
+
+
+
 	private static void sop(Object file) {
 		// TODO Auto-generated method stub
 		System.out.println(file);

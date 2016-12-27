@@ -1,0 +1,5 @@
+Student [name=da, ma=89, cn=87, en=88, sum=264]
+Student [name=aa, ma=89, cn=88, en=98, sum=275]
+Student [name=xiao, ma=98, cn=97, en=96, sum=291]
+Student [name=gaoyue, ma=100, cn=99, en=98, sum=297]
+Student [name=zhoukang, ma=100, cn=100, en=100, sum=300]
