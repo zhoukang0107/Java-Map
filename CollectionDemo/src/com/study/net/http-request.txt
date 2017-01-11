@@ -1,0 +1,19 @@
+http://127.0.0.1:10009/web/index.html   
+ 协议        主机名                 端口号  资源路径  资源
+
+GET /web/index.html HTTP/1.1
+请求方式 资源路径 资源             http版本
+Accept: text/html, application/xhtml+xml, image/jxr, */*
+浏览器可以接受的数据格式
+Accept-Language: zh-CN
+浏览器的语言
+User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko
+
+Accept-Encoding: gzip, deflate
+接受压缩格式
+Host: 127.0.0.1:10009
+要访问的主机
+Connection: Keep-Alive
+连接：保持存活
+空行
+请求数据体
