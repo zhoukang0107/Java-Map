@@ -22,7 +22,8 @@ public class Regex_1 {
 		//Test();
 		//cheakPhone();
 		//splittTest();
-		repleaceAllTest();
+		//repleaceAllTest();
+		
 	}
 	
 	//把一个字符串中符合规则的部分替换成另一个字符串
