@@ -5,9 +5,9 @@ package com.study.thread;
  * 其实就是多个线程在操作同一资源
  * 但是操作的动作不同
  * 
- * niitify()/notifyAll()
+ * notify()/notifyAll()
  * 在其他线程调用此对象的notify方法或者notifyAll方法前，导致当前线程等待。换句话说，此方法的行为就好像它仅执行wait(0)调用一样。
- * 当前线程必须云游此对象监视器
+ * 当前线程必须拥有此对象监视器
  * 
  * 
  * wait()
