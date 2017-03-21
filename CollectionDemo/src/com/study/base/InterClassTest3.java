@@ -37,7 +37,6 @@ class OuterClass1{
 	
 	public void function1(){ //匿名内部类
 		new AbsInner() {
-			
 			@Override
 			void show() {
 				// TODO Auto-generated method stub

@@ -133,9 +133,7 @@ class CD implements IC{
 	@Override
 	public void methodC() {
 		// TODO Auto-generated method stub
-		
 	}
-	
 }
 
 interface IE{

@@ -40,7 +40,7 @@ class Zi extends Fu{
 	
 	Zi(int i)//不在调用super,因为this中调用过super语句了
 	{
-	   this();   //this和super不能同时出现在构造函数，他们必须都写在第一行 	，因为初始化工作需要先做
+	   this();   //this和super不能同时出现在构造函数，他们必须都写在第一行，因为初始化工作需要先做
 	}
 }
 

@@ -40,5 +40,4 @@ public class InterClassTest2 {
 		outer.method(5);
 		outer.method(6);
 	}
-
 }
