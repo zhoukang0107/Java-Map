@@ -5,15 +5,15 @@ import java.util.List;
 
 
 /**
- * Arrays�����ڲ�������Ĺ�����
- * ���涼��Щ��̬����
+ * Arrays：用于操作数组的工具类
+ * 里面都是些静态方法
  * 
- * asList����������list����
- * ����ʹ�ü����еķ�����������
- * ������任�ɼ��ϲ�����ʹ�ü��ϵ���ɾ��������Ϊ���ݵĳ����ǹ̶��ģ������ɾ�˾ͻᷢ��UnsupportedOperationException
+ * asList：将数组变成list集合
+ * 可以使用集合中的方法操作数组
+ * 将数组变换成集合不可以使用集合的增删方法，因为数据的长度是固定的，如果增删了就会发生UnsupportedOperationException
  * 
- * ��������е�Ԫ���Ƕ���ʱ����ô��ɼ���ʱ�����е�Ԫ�ؾ�ֱ��ת�ɼ����е�Ԫ��
- * ��������е�Ԫ�ض��ǻ����������ͣ���ô�Ὣ��������Ϊ�����еĶ������
+ * 如果数组中的元素是对象时，那么变成集合时数组中的元素就直接转成集合中的元素
+ * 如果数组中的元素都是基本数据类型，那么会将该数组作为集合中的对象存在
  */
 
 
@@ -25,7 +25,7 @@ public class ArraysTest {
 		System.out.println(Arrays.toString(arr));
 		String[] strs = {"asa","aas","dsd","gdsd","asa"};
 		List<String> list = Arrays.asList(strs);
-		//list.add("qq");   //������任�ɼ��ϲ�����ʹ�ü��ϵ���ɾ����
+		//list.add("qq");   //将数组变换成集合不可以使用集合的增删方法
 		System.out.println(list);*/
 		
 		int[] arr = {1,23,54,21,32};
