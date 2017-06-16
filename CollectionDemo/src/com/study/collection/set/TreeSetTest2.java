@@ -4,26 +4,26 @@ import java.util.Iterator;
 import java.util.TreeSet;
 
 /*
- * Set�����򲻿��ظ�Ԫ��
- * 		HashSet:���ݽṹ�ǹ�ϣ�����߳��Ƿ�ͬ����
- * 			��֤Ԫ��Ψһ��ԭ�����ж�Ԫ�ص�hashCodeֵ�Ƿ���ͬ�������ͬ��������ж�Ԫ�ص�equals�����Ƿ�Ϊtrue
- * 		HashTree:���Զ�set�����е�Ԫ������(ǿ��Ԫ��ʵ��Comparable�ӿ�),���ݽṹ�����������
- * 			�Ͳ����ݽṹ�Ƕ�����;
- * 			��֤Ԫ��Ψһ�Ե���compareTo����0��
- * 			Ԫ���Ƿ���ͬ�Ǹ���compareTo�Ƚϵ�
+ * Set：无序不可重复元素
+ * 		HashSet:数据结构是哈希表，线程是非同步的
+ * 			保证元素唯一的原理：判断元素的hashCode值是否相同，如果相同还会继续判断元素的equals方法是否为true
+ * 		HashTree:可以对set集合中的元素排序(强制元素实现Comparable接口),数据结构是有序二叉树
+ * 			低层数据结构是二叉树;
+ * 			保证元素唯一性的是compareTo返回0；
+ * 			元素是否相同是根据compareTo比较的
  * 			
- * 			TreeSet����ĵ�һ�ַ�ʽ����Ԫ�������߱��Ƚ��ԣ�Ԫ����Ҫʵ��Comparable�ӿڣ�����compareTo���������ַ�ʽҲ��ΪԪ�ص���Ȼ˳�����Ĭ��˳��
+ * 			TreeSet排序的第一种方式：让元素自身具备比较性，元素需要实现Comparable接口，覆盖compareTo方法，这种方式也称为元素的自然顺序或者默认顺序
  * 			
- * 			TreeSet�ĵڶ�������ʽ����Ԫ���������߱��Ƚ��Ի��߲�������ʱ����ʱ����Ҫ�ü��������߱��Ƚ���
- * 					�ڼ���һ��ʼ�������˱ȽϷ�ʽ
+ * 			TreeSet的第二种排序方式：当元素自身不具备比较性或者不是所需时，这时候需要让集合自身具备比较性
+ * 					在集合一初始化就有了比较方式
  * 					
  * 				
  * 			
  * 			
- * ��Ԫ���������߱��Ƚ���ʱ�����߾߱��ıȽ��Բ������裬��ʱ��Ҫ�����������߱��Ƚ���
- * �����˱Ƚ��������Ƚ���������Ϊ��������TreeSet�Ĺ��캯��
- * �����ֱȽ϶�����ʱ���ԱȽ���Ϊ׼
- * ����һ��Comparator�࣬ʵ��compare����
+ * 当元素自身不具备比较性时，或者具备的比较性不是所需，这时需要让容器自身具备比较性
+ * 定义了比较器，将比较器对象作为参数传入TreeSet的构造函数
+ * 当两种比较都存在时，以比较器为准
+ * 定义一个Comparator类，实现compare方法
  */
 
 

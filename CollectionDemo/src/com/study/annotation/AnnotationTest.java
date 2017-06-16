@@ -3,8 +3,8 @@ package com.study.annotation;
 @ItcastAnnotation(annotationAttr=@MetaAnnotation("fix"),color="red",value="abc",arrayAttr={1,2,3})
 public class AnnotationTest {
 
-	@ItcastAnnotation("abb")   //colorÒÑ¾­ÓĞÁËÄ¬ÈÏÖµ£¬¿ÉÒÔ²»ÓÃĞ´"value="Ö»¸øvalueÊôĞÔÉèÖÃ
-	//@SuppressWarnings("deprecated")   //Èç¹ûÖ»ÓĞvalueÊôĞÔĞèÒªÉèÖµÊ±£¬¿ÉÒÔ²»Ğ´"value="
+	@ItcastAnnotation("abb")   //colorå·²ç»æœ‰äº†é»˜è®¤å€¼ï¼Œå¯ä»¥ä¸ç”¨å†™"value="åªç»™valueå±æ€§è®¾ç½®
+	//@SuppressWarnings("deprecated")   //å¦‚æœåªæœ‰valueå±æ€§éœ€è¦è®¾å€¼æ—¶ï¼Œå¯ä»¥ä¸å†™"value="
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		if (AnnotationTest.class.isAnnotationPresent(ItcastAnnotation.class)){
@@ -21,9 +21,9 @@ public class AnnotationTest {
 	
 	/**
 	 * @Deprecated
-	 * ´Ë×¢½â±íÃ÷¸Ãº¯ÊıÒÑ¹ıÆÚ£¬²»½¨ÒéÊ¹ÓÃ
+	 * æ­¤æ³¨è§£è¡¨æ˜è¯¥å‡½æ•°å·²è¿‡æœŸï¼Œä¸å»ºè®®ä½¿ç”¨
 	 */
-	@ItcastAnnotation(annotationAttr=@MetaAnnotation("fix"),color="red",value="abc",arrayAttr=2)   //Èç¹ûÊı×éÖĞÊôĞÔÖ»ÓĞÒ»¸öÖµ£¬ÄÇÃ´¿ÉÒÔÊ¡ÂÔ´óÀ¨ºÅ
+	@ItcastAnnotation(annotationAttr=@MetaAnnotation("fix"),color="red",value="abc",arrayAttr=2)   //å¦‚æœæ•°ç»„ä¸­å±æ€§åªæœ‰ä¸€ä¸ªå€¼ï¼Œé‚£ä¹ˆå¯ä»¥çœç•¥å¤§æ‹¬å·
 	@Deprecated
 	public static void sayHell(){
 		

@@ -1,10 +1,10 @@
 package com.study.base;
 
 /**
- * �ڲ��ඨ���ھֲ�ʱ��
- * 1���ڲ��ඨ���ھֲ�ʱ�����Ա���Ա���η�����
- * 2������ֱ�ӷ����ⲿ���еĳ�Ա����Ϊ�����ⲿ������ã�
- *    ���ǲ����Է��������ھֲ��еı�����ֻ�ܷ��ʱ�final���εľֲ�����??????
+ * 内部类定义在局部时：
+ * 1、内部类定义在局部时不可以被成员修饰符修饰
+ * 2、可以直接访问外部类中的成员，因为持有外部类的引用，
+ *    但是不可以访问他所在局部中的变量，只能访问被final修饰的局部变量??????
  * 
  * 
  * 
@@ -19,7 +19,7 @@ class OuterClass{
 		final int y = 4;
 		/* int y = 4;
 		y++;*/
-		class Inner{  //�ڲ��ඨ���ھֲ������ܱ�static���Σ�Ҳ���ܶ��徲̬��Ա
+		class Inner{  //内部类定义在局部，不能被static修饰，也不能定义静态成员
 			void function(){
 				System.out.println("Inner:"+x+" y="+y+" a="+a);
 			}

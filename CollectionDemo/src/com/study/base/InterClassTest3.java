@@ -1,14 +1,14 @@
 package com.study.base;
 
 /**
- * ÄäÃûÄÚ²¿Àà£º
- * 1¡¢ÄäÃûÄÚ²¿ÀàÆäÊµ¾ÍÊÇÄÚ²¿ÀàµÄ¼òĞ´ĞÎÊ½
- * 2¡¢¶¨ÒåÄäÃûÄÚ²¿ÀàµÄÇ°Ìá£º
- *    ÄÚ²¿Àà±ØĞë¼Ì³ĞÒ»¸ö»òÕßÊµÏÖ½Ó¿Ú
- * 3¡¢ÄäÃûÄÚ²¿ÀàµÄ¸ñÊ½£º
- *    new ¸¸Àà»òÕß½Ó¿Ú(){¶¨Òå×ÓÀàµÄÄÚÈİ}
- * 4¡¢ÆäÊµÄäÃûÄÚ²¿Àà¾ÍÊÇÒ»¸öÄäÃû×ÓÀà¶ÔÏó£¬¿ÉÒÔÀí½âÎª´øÄÚÈİµÄ¶ÔÏó
- * 5¡¢ÄäÃûÄÚ²¿ÀàÖĞ¶¨ÒåµÄ·½·¨×îºÃ²»Òª³¬¹ı3¸ö
+ * åŒ¿åå†…éƒ¨ç±»ï¼š
+ * 1ã€åŒ¿åå†…éƒ¨ç±»å…¶å®å°±æ˜¯å†…éƒ¨ç±»çš„ç®€å†™å½¢å¼
+ * 2ã€å®šä¹‰åŒ¿åå†…éƒ¨ç±»çš„å‰æï¼š
+ *    å†…éƒ¨ç±»å¿…é¡»ç»§æ‰¿ä¸€ä¸ªæˆ–è€…å®ç°æ¥å£
+ * 3ã€åŒ¿åå†…éƒ¨ç±»çš„æ ¼å¼ï¼š
+ *    new çˆ¶ç±»æˆ–è€…æ¥å£(){å®šä¹‰å­ç±»çš„å†…å®¹}
+ * 4ã€å…¶å®åŒ¿åå†…éƒ¨ç±»å°±æ˜¯ä¸€ä¸ªåŒ¿åå­ç±»å¯¹è±¡ï¼Œå¯ä»¥ç†è§£ä¸ºå¸¦å†…å®¹çš„å¯¹è±¡
+ * 5ã€åŒ¿åå†…éƒ¨ç±»ä¸­å®šä¹‰çš„æ–¹æ³•æœ€å¥½ä¸è¦è¶…è¿‡3ä¸ª
  * 
  *
  */
@@ -19,7 +19,7 @@ abstract class AbsInner{
 
 class OuterClass1{
 	int x = 3;
-	class Inner extends AbsInner{  //ÄÚ²¿Àà¶¨ÒåÔÚ¾Ö²¿£¬²»ÄÜ±»staticĞŞÊÎ£¬Ò²²»ÄÜ¶¨Òå¾²Ì¬³ÉÔ±
+	class Inner extends AbsInner{  //å†…éƒ¨ç±»å®šä¹‰åœ¨å±€éƒ¨ï¼Œä¸èƒ½è¢«staticä¿®é¥°ï¼Œä¹Ÿä¸èƒ½å®šä¹‰é™æ€æˆå‘˜
 		void function(){
 			System.out.println("Inner:"+x);
 		}
@@ -32,15 +32,15 @@ class OuterClass1{
 	}
 	
 	public void function(){ 
-		new Inner().show();  //ÄäÃû¶ÔÏó
+		new Inner().show();  //åŒ¿åå¯¹è±¡
 	}
 	
-	public void function1(){ //ÄäÃûÄÚ²¿Àà
+	public void function1(){ //åŒ¿åå†…éƒ¨ç±»
 		new AbsInner() {
 			@Override
 			void show() {
 				// TODO Auto-generated method stub
-				System.out.println("ÄäÃûÄÚ²¿Àà show£º"+x);
+				System.out.println("åŒ¿åå†…éƒ¨ç±» showï¼š"+x);
 			}
 		}.show();
 		
@@ -49,11 +49,11 @@ class OuterClass1{
 			@Override
 			void show() {
 				// TODO Auto-generated method stub
-				System.out.println("ÄäÃûÄÚ²¿Àà show£º"+x);
+				System.out.println("åŒ¿åå†…éƒ¨ç±» showï¼š"+x);
 			}
 			
 			void show1(){
-				System.out.println("ÄäÃûÄÚ²¿Àà×ÓÀàshow£º"+x);
+				System.out.println("åŒ¿åå†…éƒ¨ç±»å­ç±»showï¼š"+x);
 			}
 		}.show1();
 		
@@ -61,7 +61,7 @@ class OuterClass1{
 			@Override
 			void show() {
 				// TODO Auto-generated method stub
-				System.out.println("ÄäÃûÄÚ²¿Àà show£º"+x);
+				System.out.println("åŒ¿åå†…éƒ¨ç±» showï¼š"+x);
 			}
 		};
 		absinner.show();
@@ -83,13 +83,13 @@ public class InterClassTest3 {
 
 }
 
-//Á·Ï°
+//ç»ƒä¹ 
 interface IInner{
 	void method();
 }
 
 class Test2{
-	//²¹È«´úÂë£¬Í¨¹ıÄäÃûÄÚ²¿Àà
+	//è¡¥å…¨ä»£ç ï¼Œé€šè¿‡åŒ¿åå†…éƒ¨ç±»
 	
 	static IInner function(){
 		return new IInner(){

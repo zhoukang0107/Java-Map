@@ -16,15 +16,15 @@ public class UnnameClassTest {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		//ÄäÃû¶ÔÏó£¬µ÷ÓÃÊôÐÔÎÞÒâÒå£¬Ö´ÐÐÍê±Ï¾Í±ä³ÉÀ¬»øÁË
+		//åŒ¿åå¯¹è±¡ï¼Œè°ƒç”¨å±žæ€§æ— æ„ä¹‰ï¼Œæ‰§è¡Œå®Œæ¯•å°±å˜æˆåžƒåœ¾äº†
 		new Car().num = 5;
-		//ÄäÃû¶ÔÏó£¬µ÷ÓÃ·½·¨ÓÐÒâÒå
+		//åŒ¿åå¯¹è±¡ï¼Œè°ƒç”¨æ–¹æ³•æœ‰æ„ä¹‰
 		new Car().run();
 		
-		//ÄäÃû¶ÔÏóÊ¹ÓÃ·½·¨Ò»£ºµ±¶Ô¶ÔÏóµÄÖ»µ÷ÓÃÒ»´ÎÊ±£¬¿ÉÒÔÊ¹ÓÃÄäÃû¶ÔÏóÀ´Íê³É£¬ÕâÑùÐ´±È½Ï¼ò»¯
-		//Èç¹ûÒ»¸ö¶ÔÏó½øÐÐ¶à¸ö³ÉÔ±µ÷ÓÃ£¬±ØÐë¸øÕâ¸ö¶ÔÏóÆð¸öÃû×Ö
+		//åŒ¿åå¯¹è±¡ä½¿ç”¨æ–¹æ³•ä¸€ï¼šå½“å¯¹å¯¹è±¡çš„åªè°ƒç”¨ä¸€æ¬¡æ—¶ï¼Œå¯ä»¥ä½¿ç”¨åŒ¿åå¯¹è±¡æ¥å®Œæˆï¼Œè¿™æ ·å†™æ¯”è¾ƒç®€åŒ–
+		//å¦‚æžœä¸€ä¸ªå¯¹è±¡è¿›è¡Œå¤šä¸ªæˆå‘˜è°ƒç”¨ï¼Œå¿…é¡»ç»™è¿™ä¸ªå¯¹è±¡èµ·ä¸ªåå­—
 		
-		//ÄäÃû¶ÔÏóÊ¹ÓÃ¶þ£º¿ÉÒÔ½«ÄäÃû¶ÔÏó×÷ÎªÊµ¼Ê²ÎÊý½øÐÐ´«µÝ
+		//åŒ¿åå¯¹è±¡ä½¿ç”¨äºŒï¼šå¯ä»¥å°†åŒ¿åå¯¹è±¡ä½œä¸ºå®žé™…å‚æ•°è¿›è¡Œä¼ é€’
 	}
 
 }

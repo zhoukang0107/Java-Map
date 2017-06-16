@@ -1,24 +1,24 @@
 package com.study.base;
 
 /**
- * ���󣺻�ȡһ�γ������е�ʱ��
- * ԭ������ȡ����ʼ�ͽ�����ʱ�䣬�����
- * ��ȡʱ�䣺System.currentTimeMillis()
+ * 需求：获取一段程序运行的时间
+ * 原理：获取程序开始和结束的时间，并相减
+ * 获取时间：System.currentTimeMillis()
  * 
  * 
- * ����������Ż���Ϳ��Խ���������⣬���ַ�ʽ����ģ�巽�����ģʽ
+ * 当代码完成优化后就可以解决这类问题，这种方式叫做模板方法设计模式
  * 
  * 
- * ʲô��ģ�巽���أ�
- * �ڶ��幦��ʱ�����ܵ�һ������ȷ���ģ������в�һ�����ǲ�ȷ������ȷ���Ĳ�����ʹ�ò�ȷ���Ĳ��֣�
- * ��ô��ʱ����Ҫ����ȷ���Ĳ��ֱ�¶��ȥ���ɸ��������ȥ���
+ * 什么是模板方法呢？
+ * 在定义功能时，功能的一部分是确定的，但是有不一部分是不确定，而确定的部分在使用不确定的部分，
+ * 那么这时就需要将不确定的部分暴露出去，由该类的子类去完成
  * 
  * 
  */
 
 
 abstract class GetTime{
-	public final void getTime(){   //��������д
+	public final void getTime(){   //不允许复写
 		long start = System.currentTimeMillis();
 		/*for (int i=0;i<1000;i++){
 			System.out.println(i);
@@ -26,10 +26,10 @@ abstract class GetTime{
 		*/
 		runCode();
 		long end = System.currentTimeMillis();
-		System.out.println("���룺"+(end-start));
+		System.out.println("毫秒："+(end-start));
 	}
 
-	public abstract void runCode();   //���븴д 
+	public abstract void runCode();   //必须复写 
 	/*{
 		// TODO Auto-generated method stub
 		for (int i=0;i<1000;i++){
@@ -46,7 +46,7 @@ class SubTime extends GetTime{
 		}
 		long end = System.currentTimeMillis();
 		
-		System.out.println("���룺"+(end-start));
+		System.out.println("毫秒："+(end-start));
 	}*/
 	public void runCode(){
 		for (int i=0;i<4000;i++){

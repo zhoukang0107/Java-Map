@@ -1,32 +1,32 @@
 package com.study.base;
 /**
- * ¶àÌ¬£º
- * ¿ÉÒÔÀí½âÎªÊÂÎï´æÔÚµÄ¶àÖÖÌåÏÖÐÎÌ¬
- * 1¡¢¶àÌ¬µÄ»ù±¾ÌåÏÖ
- *    ¸¸ÀàµÄÒýÓÃÖ¸ÏòÁË×Ô¼ºµÄ×ÓÀà¶ÔÏó
- *    ¸¸ÀàµÄÒýÓÃÒ²¿ÉÒÔ½ÓÊÜ×Ô¼ºµÄ×ÓÀà¶ÔÏó
- * 2¡¢¶àÌ¬µÄÇ°Ìá
- *    ±ØÐëÊÇÀàÓëÀàÖ®¼äÒªÓÐ¹ØÏµ£¬ÒªÃ´¼Ì³Ð£¬ÒªÃ´ÊµÏÖ
- *    Í¨³£»¹ÓÐÒ»¸öÇ°Ìá£¬´æÔÚ¸²¸Ç
- * 3¡¢¶àÌ¬µÄºÃ´¦
- *    ¶àÌ¬µÄ³öÏÖÌá¸ßÁË³ÌÐòµÄÀ©Õ¹ÐÔ
- * 4¡¢¶àÌ¬µÄ±×¶Ë
- *    Ìá¸ßÁËÀ©Õ¹ÐÔ£¬µ«ÊÇÖ»ÄÜÊ¹ÓÃ¸¸ÀàµÄÒýÓÃ·ÃÎÊ×ÓÀàÖÐ³ÉÔ±
- * 4¡¢¶àÌ¬µÄÓ¦ÓÃ
+ * å¤šæ€ï¼š
+ * å¯ä»¥ç†è§£ä¸ºäº‹ç‰©å­˜åœ¨çš„å¤šç§ä½“çŽ°å½¢æ€
+ * 1ã€å¤šæ€çš„åŸºæœ¬ä½“çŽ°
+ *    çˆ¶ç±»çš„å¼•ç”¨æŒ‡å‘äº†è‡ªå·±çš„å­ç±»å¯¹è±¡
+ *    çˆ¶ç±»çš„å¼•ç”¨ä¹Ÿå¯ä»¥æŽ¥å—è‡ªå·±çš„å­ç±»å¯¹è±¡
+ * 2ã€å¤šæ€çš„å‰æ
+ *    å¿…é¡»æ˜¯ç±»ä¸Žç±»ä¹‹é—´è¦æœ‰å…³ç³»ï¼Œè¦ä¹ˆç»§æ‰¿ï¼Œè¦ä¹ˆå®žçŽ°
+ *    é€šå¸¸è¿˜æœ‰ä¸€ä¸ªå‰æï¼Œå­˜åœ¨è¦†ç›–
+ * 3ã€å¤šæ€çš„å¥½å¤„
+ *    å¤šæ€çš„å‡ºçŽ°æé«˜äº†ç¨‹åºçš„æ‰©å±•æ€§
+ * 4ã€å¤šæ€çš„å¼Šç«¯
+ *    æé«˜äº†æ‰©å±•æ€§ï¼Œä½†æ˜¯åªèƒ½ä½¿ç”¨çˆ¶ç±»çš„å¼•ç”¨è®¿é—®å­ç±»ä¸­æˆå‘˜
+ * 4ã€å¤šæ€çš„åº”ç”¨
  * 
  * 
- * ¶àÌ¬³ÉÔ±º¯ÊýÌØµã(·Ç¾²Ì¬)£º
- * ÔÚ±àÒëÊ±ÆÚ£¬²ÎÔÄÒýÓÃÐÍ±äÁ¿ËùÊôµÄÀàÖÐÊÇ·ñÓÐµ÷ÓÃµÄ·½·¨£¬Èç¹ûÓÐ£¬±àÒëÍ¨¹ý£¬Èç¹ûÃ»ÓÐ±àÒëÊ§°Ü
- * ÔÚÔËÐÐÊ±ÆÚ£¬²ÎÔÄ¶ÔÏóËùÊôµÄÀàÖÐÊÇ·ñÓÐµ÷ÓÃµÄ·½·¨
+ * å¤šæ€æˆå‘˜å‡½æ•°ç‰¹ç‚¹(éžé™æ€)ï¼š
+ * åœ¨ç¼–è¯‘æ—¶æœŸï¼Œå‚é˜…å¼•ç”¨åž‹å˜é‡æ‰€å±žçš„ç±»ä¸­æ˜¯å¦æœ‰è°ƒç”¨çš„æ–¹æ³•ï¼Œå¦‚æžœæœ‰ï¼Œç¼–è¯‘é€šè¿‡ï¼Œå¦‚æžœæ²¡æœ‰ç¼–è¯‘å¤±è´¥
+ * åœ¨è¿è¡Œæ—¶æœŸï¼Œå‚é˜…å¯¹è±¡æ‰€å±žçš„ç±»ä¸­æ˜¯å¦æœ‰è°ƒç”¨çš„æ–¹æ³•
  * 
  * 
- * ¼òµ¥×Ü½á£º³ÉÔ±º¯ÊýÔÚ¶àÌ¬µ÷ÓÃÊ±£¬±àÒë¿´×ó±ß£¬ÔËÐÐ¿´ÓÒ±ß
+ * ç®€å•æ€»ç»“ï¼šæˆå‘˜å‡½æ•°åœ¨å¤šæ€è°ƒç”¨æ—¶ï¼Œç¼–è¯‘çœ‹å·¦è¾¹ï¼Œè¿è¡Œçœ‹å³è¾¹
  * 
  * 
- * ÔÚ¶àÌ¬ÖÐ³ÉÔ±±äÁ¿µÄÌØ±ð£º£¨¾²Ì¬º¯Êý£©
- * ÎÞÂÛ±àÒëºÍÔËÐÐ£¬¶¼²Î¿¼×ó±ß£¨ÒýÓÃÐÍ±äÁ¿ËùÊôµÄ£©
+ * åœ¨å¤šæ€ä¸­æˆå‘˜å˜é‡çš„ç‰¹åˆ«ï¼šï¼ˆé™æ€å‡½æ•°ï¼‰
+ * æ— è®ºç¼–è¯‘å’Œè¿è¡Œï¼Œéƒ½å‚è€ƒå·¦è¾¹ï¼ˆå¼•ç”¨åž‹å˜é‡æ‰€å±žçš„ï¼‰
  * 
- * ÔÚ¶àÌ¬ÖÐ£¬¾²Ì¬³ÉÔ±º¯ÊýµÄÌØ±ð£¬ÎÞÂÛ±àÒë»òÔËÐÐ¶¼²Î¿¼×ó±ß
+ * åœ¨å¤šæ€ä¸­ï¼Œé™æ€æˆå‘˜å‡½æ•°çš„ç‰¹åˆ«ï¼Œæ— è®ºç¼–è¯‘æˆ–è¿è¡Œéƒ½å‚è€ƒå·¦è¾¹
  *
  */
 
@@ -47,11 +47,11 @@ class Cat extends Animal{
 	@Override
 	public void eat() {
 		// TODO Auto-generated method stub
-		out.println("³ÔÀÏÊó"+id);
+		out.println("åƒè€é¼ "+id);
 	}
 	
 	public void catchMouse(){
-		out.println("×¥ÀÏÊó");
+		out.println("æŠ“è€é¼ ");
 	}
 	
 	public static void catchMouse1(){
@@ -64,11 +64,11 @@ class Dog extends Animal{
 	@Override
 	public void eat() {
 		// TODO Auto-generated method stub
-		out.println("³Ô¹ÇÍ·");
+		out.println("åƒéª¨å¤´");
 	}
 	
 	public void shout(){
-		out.println("¹·½Ð");
+		out.println("ç‹—å«");
 	}
 }
 
@@ -77,11 +77,11 @@ class Pig extends Animal{
 	@Override
 	public void eat() {
 		// TODO Auto-generated method stub
-		out.println("Öí³ÔÖíËÇÁÏ");
+		out.println("çŒªåƒçŒªé¥²æ–™");
 	}
 	
 	public void sleep(){
-		out.println("ÖíË¯¾õ");
+		out.println("çŒªç¡è§‰");
 	}
 	
 }
@@ -97,13 +97,13 @@ public class PolymorphismTest {
 		Pig p= new Pig();
 		functionPig(p);*/
 		
-		Animal c= new Cat();  //ÀàÐÍÌáÉý
+		Animal c= new Cat();  //ç±»åž‹æå‡
 		c.eat();
-		//Èç¹ûÏëÒªµ÷ÓÃcatµÄÌØÊâ·½·¨ÈçºÎ²Ù×÷£¿
-		//Ç¿ÖÆ½«¸¸ÀàµÄÒýÓÃ×ª»»³É×ÓÀàÀàÐÍ,ÏòÏÂ×ªÐÍ
-		//Ç§Íò²»Òª³öÏÖ½«¸¸ÀàµÄ¶ÔÏó×ª»»Îª×ÓÀàÀàÐÍ
-		//ÎÒÃÇÄÜ×ª»»µÄÊÇ¸¸ÀàÒýÓÃÖ¸Ïò×ÓÀà¶ÔÏóÊ±£¬¸ÃÒýÓÃÊÇ¿ÉÒÔ±»ÌáÉýµÄ£¬Ò²¿ÉÒÔ±»Ç¿ÖÆ×ª»»
-		//×ÔÊ¼ÖÁÖÕ¶¼ÊÇ×ÓÀà¶ÔÏóÔÚ×ª»»
+		//å¦‚æžœæƒ³è¦è°ƒç”¨catçš„ç‰¹æ®Šæ–¹æ³•å¦‚ä½•æ“ä½œï¼Ÿ
+		//å¼ºåˆ¶å°†çˆ¶ç±»çš„å¼•ç”¨è½¬æ¢æˆå­ç±»ç±»åž‹,å‘ä¸‹è½¬åž‹
+		//åƒä¸‡ä¸è¦å‡ºçŽ°å°†çˆ¶ç±»çš„å¯¹è±¡è½¬æ¢ä¸ºå­ç±»ç±»åž‹
+		//æˆ‘ä»¬èƒ½è½¬æ¢çš„æ˜¯çˆ¶ç±»å¼•ç”¨æŒ‡å‘å­ç±»å¯¹è±¡æ—¶ï¼Œè¯¥å¼•ç”¨æ˜¯å¯ä»¥è¢«æå‡çš„ï¼Œä¹Ÿå¯ä»¥è¢«å¼ºåˆ¶è½¬æ¢
+		//è‡ªå§‹è‡³ç»ˆéƒ½æ˜¯å­ç±»å¯¹è±¡åœ¨è½¬æ¢
 		Cat cat = (Cat)c;
 		cat.catchMouse();
 		functionAnimal(c);

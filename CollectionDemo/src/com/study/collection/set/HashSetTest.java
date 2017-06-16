@@ -5,16 +5,16 @@ import java.util.Iterator;
 import javax.swing.plaf.basic.BasicScrollPaneUI.HSBChangeListener;
 
 /**
- * SetԪ��������ģ������ȡ����˳��һ��һ�£���Ԫ�ز������ظ�
- * 		HashSet:�ײ����ݽṹ�ǹ�ϣ��
- * 				HashSet����α�֤Ԫ�ص�Ψһ���أ�
- * 					��ͨ��Ԫ�ص�����������hashCode��equals�����
- * 					���Ԫ�ص�hashCode��ͬ���Ż��ж�equals�Ƿ�Ϊtrue��
- * 					���Ԫ�ص�hashCode��ͬ�Ż����equals
- * 				ע�⣺�����ж�Ԫ���Ƿ�����Լ�ɾ���Ȳ����������ķ�����Ԫ�ص�hashCode��equals�����hashCode��ͬ�򲻵���equals��
+ * Set元素是无序的（存入和取出的顺序不一定一致），元素不可以重复
+ * 		HashSet:底层数据结构是哈希表
+ * 				HashSet是如何保证元素的唯一的呢：
+ * 					是通过元素的两个方法，hashCode和equals来完成
+ * 					如果元素的hashCode相同，才会判断equals是否为true，
+ * 					如果元素的hashCode不同才会调用equals
+ * 				注意：对于判断元素是否存在以及删除等操作，依赖的方法是元素的hashCode和equals（如果hashCode不同则不调用equals）
  * 		TreeSet:
- * Set���ܺ�Collection�Ĺ���һ��
- * HashSet��֤Ԫ��Ψһ��:�ȱȽ�hashCode����hashCode��ͬʱ��ȥʹ��equals�Ƚ�
+ * Set功能和Collection的功能一致
+ * HashSet保证元素唯一性:先比较hashCode，当hashCode相同时才去使用equals比较
  *
  */
 

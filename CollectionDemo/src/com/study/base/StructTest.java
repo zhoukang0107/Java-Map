@@ -1,33 +1,33 @@
 package com.study.base;
 /**
- * ¶ÔÏó³õÊ¼»¯¹ı³Ì£º
+ * å¯¹è±¡åˆå§‹åŒ–è¿‡ç¨‹ï¼š
  * Person p = new Person("zhangsan", 28);
- * 1¡¢ÒòÎªnewÓÃµ½ÁËPerson.classÎÄ¼ş,ËùÒÔ»áÏÈÕÒµ½Person.classÎÄ¼ş²¢¼ÓÔØµ½ÄÚ´æÖĞ
- * 2¡¢Ö´ĞĞ¸ÃÀàµÄstatic´úÂë¿é£¬Èç¹ûÓĞµÄ»°£¬¸øPerson.classÀà½øĞĞ³õÊ¼»¯
- * 3¡¢ÔÚ¶ÑÄÚ´æÖĞ¿ª±Ù¿Õ¼ä£¬·ÖÅäÄÚ´æµØÖ·
- * 4¡¢ÔÚ¶ÑÄÚ´æÖĞ½¨Á¢¶ÔÏóµÄÌØÓĞÊôĞÔ£¬²¢½øĞĞÄ¬ÈÏ³õÊ¼»¯£¨null¡¢0µÈ£©
- * 5¡¢¶ÔÊôĞÔ½øĞĞÏÔÊ½³õÊ¼»¯
- * 6¡¢¶Ô¶ÔÏó½øĞĞ¹¹Ôì´úÂë¿é³õÊ¼»¯
- * 7¡¢¶Ô¶ÔÏó½øĞĞ¶ÔÓ¦µÄ¹¹Ôìº¯Êı³õÊ¼»¯
- * 8¡¢½«ÄÚ´æµØÖ·¸³¸øÕ»ÖĞµÄp±äÁ¿
+ * 1ã€å› ä¸ºnewç”¨åˆ°äº†Person.classæ–‡ä»¶,æ‰€ä»¥ä¼šå…ˆæ‰¾åˆ°Person.classæ–‡ä»¶å¹¶åŠ è½½åˆ°å†…å­˜ä¸­
+ * 2ã€æ‰§è¡Œè¯¥ç±»çš„staticä»£ç å—ï¼Œå¦‚æœæœ‰çš„è¯ï¼Œç»™Person.classç±»è¿›è¡Œåˆå§‹åŒ–
+ * 3ã€åœ¨å †å†…å­˜ä¸­å¼€è¾Ÿç©ºé—´ï¼Œåˆ†é…å†…å­˜åœ°å€
+ * 4ã€åœ¨å †å†…å­˜ä¸­å»ºç«‹å¯¹è±¡çš„ç‰¹æœ‰å±æ€§ï¼Œå¹¶è¿›è¡Œé»˜è®¤åˆå§‹åŒ–ï¼ˆnullã€0ç­‰ï¼‰
+ * 5ã€å¯¹å±æ€§è¿›è¡Œæ˜¾å¼åˆå§‹åŒ–
+ * 6ã€å¯¹å¯¹è±¡è¿›è¡Œæ„é€ ä»£ç å—åˆå§‹åŒ–
+ * 7ã€å¯¹å¯¹è±¡è¿›è¡Œå¯¹åº”çš„æ„é€ å‡½æ•°åˆå§‹åŒ–
+ * 8ã€å°†å†…å­˜åœ°å€èµ‹ç»™æ ˆä¸­çš„på˜é‡
  *
  */
 
 class Person{
 	private String name;
 	private int age;
-	private String addr = "beijin";  //ÏÔÊ½³õÊ¼»¯
+	private String addr = "beijin";  //æ˜¾å¼åˆå§‹åŒ–
 	private int id;
 	
-	{//¹¹Ôì´úÂë¿é
+	{//æ„é€ ä»£ç å—
 		id = 1;
-		System.out.println("¹¹Ôì´úÂë¿é:"+"name:"+name+" age:"+age+" addr:"+addr+" id:"+id);
+		System.out.println("æ„é€ ä»£ç å—:"+"name:"+name+" age:"+age+" addr:"+addr+" id:"+id);
 	}
-	public Person(String name, int age) {  //¹¹Ôìº¯Êı
+	public Person(String name, int age) {  //æ„é€ å‡½æ•°
 		super();
 		this.name = name;
 		this.age = age;
-		System.out.println("¹¹Ôìº¯Êı:"+"name:"+name+" age:"+age+" addr:"+addr+" id:"+id);
+		System.out.println("æ„é€ å‡½æ•°:"+"name:"+name+" age:"+age+" addr:"+addr+" id:"+id);
 	}
 }
 
