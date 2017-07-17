@@ -1,26 +1,26 @@
 package com.study.design;
 
 /**
- * Éè¼ÆÄ£Ê½£º½â¾öÄ³Ò»ÀàÎÊÌâ×îÐÐÖ®ÓÐÐ§µÄ·½·¨
- * JavaÖÐµÄ23ÖÖÉè¼ÆÄ£Ê½£º
- * µ¥ÀýÄ£Ê½£º½â¾öÒ»¸öÀàÔÚÄÚ´æÖÐÖ»´æÔÚÒ»¸ö¶ÔÏó
+ * è®¾è®¡æ¨¡å¼ï¼šè§£å†³æŸä¸€ç±»é—®é¢˜æœ€è¡Œä¹‹æœ‰æ•ˆçš„æ–¹æ³•
+ * Javaä¸­çš„23ç§è®¾è®¡æ¨¡å¼ï¼š
+ * å•ä¾‹æ¨¡å¼ï¼šè§£å†³ä¸€ä¸ªç±»åœ¨å†…å­˜ä¸­åªå­˜åœ¨ä¸€ä¸ªå¯¹è±¡
  * 
- * ÒªÏëÈ·±£¶ÔÏóÎ¨Ò»£º
- * 1¡¢ÎªÁË±ÜÃâÆäËû³ÌÐò¹ý¶à½¨Á¢¸ÃÀà¶ÔÏó£¬ÏÈ½ûÖ¹ÆäËû³ÌÐò½¨Á¢¸ÃÀà¶ÔÏó
- * 2¡¢»¹ÎªÁËÈÃÆäËû³ÌÐò¿ÉÒÔ·ÃÎÊµ½¸ÃÀà¶ÔÏóÖ»ºÃÔÚ±¾ÀàÖÐ¶¨ÒåÒ»¸ö¶ÔÏó¡£
- * 3¡¢ÎªÁË·½±ãÆäËû³ÌÐò¶Ô×Ô¶¨Òå³ÌÐòµÄ·ÃÎÊ£¬¿ÉÒÔ¶ÔÍâÌá¹©Ò»ÏÂ·ÃÎÊ·½Ê½
+ * è¦æƒ³ç¡®ä¿å¯¹è±¡å”¯ä¸€ï¼š
+ * 1ã€ä¸ºäº†é¿å…å…¶ä»–ç¨‹åºè¿‡å¤šå»ºç«‹è¯¥ç±»å¯¹è±¡ï¼Œå…ˆç¦æ­¢å…¶ä»–ç¨‹åºå»ºç«‹è¯¥ç±»å¯¹è±¡
+ * 2ã€è¿˜ä¸ºäº†è®©å…¶ä»–ç¨‹åºå¯ä»¥è®¿é—®åˆ°è¯¥ç±»å¯¹è±¡åªå¥½åœ¨æœ¬ç±»ä¸­å®šä¹‰ä¸€ä¸ªå¯¹è±¡ã€‚
+ * 3ã€ä¸ºäº†æ–¹ä¾¿å…¶ä»–ç¨‹åºå¯¹è‡ªå®šä¹‰ç¨‹åºçš„è®¿é—®ï¼Œå¯ä»¥å¯¹å¤–æä¾›ä¸€ä¸‹è®¿é—®æ–¹å¼
  * 
  * 
- * ÕâÈý²½ÔõÃ´ÓÃ´úÂëÌåÏÖÄØ£¿
- * 1¡¢½«¹¹Ôìº¯ÊýË½ÓÐ»¯
- * 2¡¢ÔÚÀàÖÐ´´½¨Ò»¸ö±¾Àà¶ÔÏó
- * 3¡¢Ìá¹©Ò»¸ö·½·¨¿ÉÒÔ»ñÈ¡µ½¸Ã¶ÔÏó
+ * è¿™ä¸‰æ­¥æ€Žä¹ˆç”¨ä»£ç ä½“çŽ°å‘¢ï¼Ÿ
+ * 1ã€å°†æž„é€ å‡½æ•°ç§æœ‰åŒ–
+ * 2ã€åœ¨ç±»ä¸­åˆ›å»ºä¸€ä¸ªæœ¬ç±»å¯¹è±¡
+ * 3ã€æä¾›ä¸€ä¸ªæ–¹æ³•å¯ä»¥èŽ·å–åˆ°è¯¥å¯¹è±¡
  */
-//Õâ¸öÊÇÏÈ³õÊ¼»¯¶ÔÏó
-//¶öººÊ½    SingleÀàÒ»½øÄÚ´æ¾ÍÒÑ¾­´´½¨ºÃÁË¶ÔÏó   ¿ª·¢Ò»°ãÓÃ
+//è¿™ä¸ªæ˜¯å…ˆåˆå§‹åŒ–å¯¹è±¡
+//é¥¿æ±‰å¼    Singleç±»ä¸€è¿›å†…å­˜å°±å·²ç»åˆ›å»ºå¥½äº†å¯¹è±¡   å¼€å‘ä¸€èˆ¬ç”¨
 class Single{
 	
-	private static Single instance = new Single();  //instanceÔÚ·½·¨Çø£¬Single¶ÔÏóÔÚ¶ÑÇø
+	private static Single instance = new Single();  //instanceåœ¨æ–¹æ³•åŒºï¼ŒSingleå¯¹è±¡åœ¨å †åŒº
 	private Single(){}
 	
 	public static Single getInstance(){
@@ -28,8 +28,8 @@ class Single{
 	}
 }
 
-//¶ÔÏóÊ±·½·¨±»µ÷ÓÃÊ±²Å³õÊ¼»¯£¬Ò²½Ð×÷¶ÔÏóµÄÑÓÊ±¼ÓÔØ
-//³ÆÎª£ºÀÁººÊ½    SingleÀà½øÄÚ´æ¶ÔÏó»¹Ã»ÓÐ´æÔÚ£¬Ö»ÓÐµ÷ÓÃÁËgetInstance·½·¨Ê±²Å½¨Á¢¶ÔÏó
+//å¯¹è±¡æ—¶æ–¹æ³•è¢«è°ƒç”¨æ—¶æ‰åˆå§‹åŒ–ï¼Œä¹Ÿå«ä½œå¯¹è±¡çš„å»¶æ—¶åŠ è½½
+//ç§°ä¸ºï¼šæ‡’æ±‰å¼    Singleç±»è¿›å†…å­˜å¯¹è±¡è¿˜æ²¡æœ‰å­˜åœ¨ï¼Œåªæœ‰è°ƒç”¨äº†getInstanceæ–¹æ³•æ—¶æ‰å»ºç«‹å¯¹è±¡
 class Single1{
 	
 	private static Single1 instance = null;
@@ -41,7 +41,7 @@ class Single1{
 		}
 		return instance;*/
 		if (instance==null){
-			synchronized(Single.class){  //¼õÉÙÁË¼ÓËø´ÎÊý
+			synchronized(Single.class){  //å‡å°‘äº†åŠ é”æ¬¡æ•°
 				if (instance==null){
 					instance = new Single1();
 				}
@@ -51,13 +51,13 @@ class Single1{
 	}
 }
 
-//¿ª·¢Ò»°ãÊ¹ÓÃ¶öººÊ½£¬°²È«£»ÀÁººÊ½¶àÏß³ÌÊ±ÐèÒª¼ÓËø£¬±È½ÏµÍÐ§
-//¼Ç×¡Ô­Ôò£º¶¨Òåµ¥ÀýÊ±£¬½¨ÒéÊ¹ÓÃ¶öººÊ½
+//å¼€å‘ä¸€èˆ¬ä½¿ç”¨é¥¿æ±‰å¼ï¼Œå®‰å…¨ï¼›æ‡’æ±‰å¼å¤šçº¿ç¨‹æ—¶éœ€è¦åŠ é”ï¼Œæ¯”è¾ƒä½Žæ•ˆ
+//è®°ä½åŽŸåˆ™ï¼šå®šä¹‰å•ä¾‹æ—¶ï¼Œå»ºè®®ä½¿ç”¨é¥¿æ±‰å¼
 
 public class SingleTest {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Single single = Single.getInstance();  //singleÔÚÕ»Çø  Ö¸Ïò¶ÑÇøÖÐµÄSingle¶ÔÏó
+		Single single = Single.getInstance();  //singleåœ¨æ ˆåŒº  æŒ‡å‘å †åŒºä¸­çš„Singleå¯¹è±¡
 	}
 }

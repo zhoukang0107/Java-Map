@@ -1,19 +1,19 @@
 package com.study.annotation;
 /**
- * ×¢½â£º
- * @Override   ¸²¸Ç¸¸Àà·½·¨  Èç¹û¸²¸ÇµÄ·½·¨Ã»ÓĞ¸²¸Ç¸¸Àà·½·¨±àÒëÆ÷±¨´í
+ * æ³¨è§£ï¼š
+ * @Override   è¦†ç›–çˆ¶ç±»æ–¹æ³•  å¦‚æœè¦†ç›–çš„æ–¹æ³•æ²¡æœ‰è¦†ç›–çˆ¶ç±»æ–¹æ³•ç¼–è¯‘å™¨æŠ¥é”™
  * @SuppressWarnings   
- * @Deprecated    ´Ë×¢½â±íÃ÷¸Ãº¯ÊıÒÑ¹ıÆÚ£¬²»½¨ÒéÊ¹ÓÃ
+ * @Deprecated    æ­¤æ³¨è§£è¡¨æ˜è¯¥å‡½æ•°å·²è¿‡æœŸï¼Œä¸å»ºè®®ä½¿ç”¨
  * 
  * 
- * ×¢½âÏàµ±ÓÚÒ»ÖÖ±ê¼Ç£¬ÔÚ³ÌĞòÖĞ¼ÓÁË×¢½â¾ÍµÈÓÚÎª³ÌĞò´òÉÏÁËÄ³ÖÖ±ê¼Ç£¬Ã»¼Ó£¬ÔòµÈÓÚÃ»ÓĞÄ³ÖÖ±ê¼Ç£¬
- * ÒÔºó£¬javac±àÒëÆ÷£¬¿ª·¢¹¤¾ßºÍÆäËû³ÌĞò¿ÉÒÔÓÃ·´ÉäÀ´ÁË½âÄãµÄÀàÒÔ¼°¸÷ÖÖÔªËØÉÏÓĞºÎÖÖ±ê¼Ç£¬¿´Äã
- * ÓĞÊ²Ã´±ê¼Ç¾ÍÈ¥¸ÉÏàÓ¦µÄÊÂ£¬±ê¼Ç¿ÉÒÔ¼ÓÔÚ°ü£¬Àà£¬·½·¨£¬·½·¨µÄ²ÎÊıÒÔ¼°¾Ö²¿±äÁ¿ÉÏ
+ * æ³¨è§£ç›¸å½“äºä¸€ç§æ ‡è®°ï¼Œåœ¨ç¨‹åºä¸­åŠ äº†æ³¨è§£å°±ç­‰äºä¸ºç¨‹åºæ‰“ä¸Šäº†æŸç§æ ‡è®°ï¼Œæ²¡åŠ ï¼Œåˆ™ç­‰äºæ²¡æœ‰æŸç§æ ‡è®°ï¼Œ
+ * ä»¥åï¼Œjavacç¼–è¯‘å™¨ï¼Œå¼€å‘å·¥å…·å’Œå…¶ä»–ç¨‹åºå¯ä»¥ç”¨åå°„æ¥äº†è§£ä½ çš„ç±»ä»¥åŠå„ç§å…ƒç´ ä¸Šæœ‰ä½•ç§æ ‡è®°ï¼Œçœ‹ä½ 
+ * æœ‰ä»€ä¹ˆæ ‡è®°å°±å»å¹²ç›¸åº”çš„äº‹ï¼Œæ ‡è®°å¯ä»¥åŠ åœ¨åŒ…ï¼Œç±»ï¼Œæ–¹æ³•ï¼Œæ–¹æ³•çš„å‚æ•°ä»¥åŠå±€éƒ¨å˜é‡ä¸Š
  *
  * 
- * ×¢½âÀà
- * ÒıÓÃÁË×¢½âÀàµÄÀà
- * ¶ÔÓ¦ÓÃÁË×¢½âÀàµÄÀà½øĞĞ·´Éä²Ù×÷µÄÀà
+ * æ³¨è§£ç±»
+ * å¼•ç”¨äº†æ³¨è§£ç±»çš„ç±»
+ * å¯¹åº”ç”¨äº†æ³¨è§£ç±»çš„ç±»è¿›è¡Œåå°„æ“ä½œçš„ç±»
  * 
  * 
  * 
@@ -22,8 +22,8 @@ package com.study.annotation;
 @ItcastAnnotation(annotationAttr=@MetaAnnotation("fix"),color="red",value="abc",arrayAttr={1,2,3})
 public class AnnotationTest {
 
-	@ItcastAnnotation("abb")   //colorÒÑ¾­ÓĞÁËÄ¬ÈÏÖµ£¬¿ÉÒÔ²»ÓÃĞ´"value="Ö»¸øvalueÊôĞÔÉèÖÃ
-	//@SuppressWarnings("deprecated")   //Èç¹ûÖ»ÓĞvalueÊôĞÔĞèÒªÉèÖµÊ±£¬¿ÉÒÔ²»Ğ´"value="
+	@ItcastAnnotation("abb")   //colorå·²ç»æœ‰äº†é»˜è®¤å€¼ï¼Œå¯ä»¥ä¸ç”¨å†™"value="åªç»™valueå±æ€§è®¾ç½®
+	//@SuppressWarnings("deprecated")   //å¦‚æœåªæœ‰valueå±æ€§éœ€è¦è®¾å€¼æ—¶ï¼Œå¯ä»¥ä¸å†™"value="
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		if (AnnotationTest.class.isAnnotationPresent(ItcastAnnotation.class)){
@@ -40,9 +40,9 @@ public class AnnotationTest {
 	
 	/**
 	 * @Deprecated
-	 * ´Ë×¢½â±íÃ÷¸Ãº¯ÊıÒÑ¹ıÆÚ£¬²»½¨ÒéÊ¹ÓÃ
+	 * æ­¤æ³¨è§£è¡¨æ˜è¯¥å‡½æ•°å·²è¿‡æœŸï¼Œä¸å»ºè®®ä½¿ç”¨
 	 */
-	@ItcastAnnotation(annotationAttr=@MetaAnnotation("fix"),color="red",value="abc",arrayAttr=2)   //Èç¹ûÊı×éÖĞÊôĞÔÖ»ÓĞÒ»¸öÖµ£¬ÄÇÃ´¿ÉÒÔÊ¡ÂÔ´óÀ¨ºÅ
+	@ItcastAnnotation(annotationAttr=@MetaAnnotation("fix"),color="red",value="abc",arrayAttr=2)   //å¦‚æœæ•°ç»„ä¸­å±æ€§åªæœ‰ä¸€ä¸ªå€¼ï¼Œé‚£ä¹ˆå¯ä»¥çœç•¥å¤§æ‹¬å·
 	@Deprecated
 	public static void sayHell(){
 		

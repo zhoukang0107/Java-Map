@@ -1,12 +1,12 @@
 package com.study.base;
 /**
- * ¹¤¾ßÀà£¬·ÀÖ¹´´½¨¶ÔÏó£¬½«¹¹Ôìº¯ÊıË½ÓĞ»¯
+ * å·¥å…·ç±»ï¼Œé˜²æ­¢åˆ›å»ºå¯¹è±¡ï¼Œå°†æ„é€ å‡½æ•°ç§æœ‰åŒ–
  * 
  *
  */
 public class ArrayTool {
 
-	//¹¤¾ßÀà·ÀÖ¹´´½¨¶ÔÏó
+	//å·¥å…·ç±»é˜²æ­¢åˆ›å»ºå¯¹è±¡
 	private  ArrayTool() {	
 	}
 	public static void main(String[] args) {

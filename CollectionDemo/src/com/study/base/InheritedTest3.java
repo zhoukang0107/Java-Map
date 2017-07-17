@@ -1,27 +1,27 @@
 package com.study.base;
 /**
- * �Ӹ����й��캯��
- * �ڶ����������г�ʼ��ʱ������Ĺ��캯��Ҳ�����У�
- * ������Ϊ����Ĺ��캯��Ĭ�ϵ�һ����һ����ʽ��super();
- * super()����ʸ����пղ����Ĺ��캯���������������еĹ��캯��Ĭ�ϵ�һ�ж���super()
+ * 子父类中构造函数
+ * 在对子类对象进行初始化时，父类的构造函数也会运行，
+ * 那是因为子类的构造函数默认第一行有一条隐式的super();
+ * super()会访问父类中空参数的构造函数，而且子类所有的构造函数默认第一行都是super()
  * 
  * 
  * 
- * Ϊʲô����һ��Ҫ���ʸ���Ĺ��캯����
- * ��Ϊ���ุ���е������������ֱ�ӻ�ȡ��������������ڽ���ʱ��Ҫ�鿴��������ζ���Щ���ݽ��г�ʼ���ģ���������
- * �ڶ����ʼ��ʱ����Ҫ�ȷ������¸���Ĺ��캯��
- * ���Ҫ���ʸ�����ָ���Ĺ��캯��������ͨ���ֶ�����super���ķ�ʽ��ָ��
+ * 为什么子类一定要访问父类的构造函数，
+ * 因为父类父类中的数据子类可以直接获取，所以子类对象在建立时需要查看父类是如何对这些数据进行初始化的，所以子类
+ * 在对象初始化时，需要先访问以下父类的构造函数
+ * 如果要访问父类中指定的构造函数，可以通过手动定义super语句的方式来指定
  * 
- * ע�⣺super����д�ڹ��캯���ĵ�һ�У��ȳ�ʼ�����࣬���ʼ������
+ * 注意：super必须写在构造函数的第一行，先初始化父类，后初始化子类
  * 
  * 
  *
- * �����ʵ��������
- * ���ۣ�
- * ��������й��캯����Ĭ�϶�����ʸ����пղεĹ��캯������Ϊ����ÿһ�����캯���ĵ�һ�ж���һ����ʽsuper
+ * 子类的实例化过程
+ * 结论：
+ * 子类的所有构造函数，默认都会访问父类中空参的构造函数，因为子类每一个构造函数的第一行都有一句隐式super
  * 
- * ��������û�пղεĹ��캯��ʱ����������ֶ�ͨ��super�����ʽ��ָ��Ҫ���ʵĸ����еĹ��캯��
- * ��Ȼ���๹�캯���ĵ�һ��Ҳ�����ֶ�ָ��this��������ʱ����еĹ��캯�������������ٻ���һ�����캯������ʸ����еĹ��캯��
+ * 当父类中没有空参的构造函数时，子类必须手动通过super语句形式来指定要访问的父类中的构造函数
+ * 当然子类构造函数的第一行也可以手动指定this语句来访问本类中的构造函数，子类中至少会有一个构造函数会访问父类中的构造函数
  */
 
 import static java.lang.System.*;
@@ -34,13 +34,13 @@ class Fu{
 
 class Zi extends Fu{
 	Zi(){
-		//super();  ���캯��ǰ��һ��super();
+		//super();  构造函数前有一条super();
 		out.println("Zi run");
 	}
 	
-	Zi(int i)//���ڵ���super,��Ϊthis�е��ù�super�����
+	Zi(int i)//不在调用super,因为this中调用过super语句了
 	{
-	   this();   //this��super����ͬʱ�����ڹ��캯�������Ǳ��붼д�ڵ�һ�У���Ϊ��ʼ��������Ҫ����
+	   this();   //this和super不能同时出现在构造函数，他们必须都写在第一行，因为初始化工作需要先做
 	}
 }
 
@@ -59,7 +59,7 @@ class Zi1 extends Fu1{
 		// TODO Auto-generated constructor stub
 	}*/
 	Zi1(int i) {
-		super(i); //����û���޲ι��캯��ʱ�����������ʽ���ø���Ĺ��캯��
+		super(i); //父类没有无参构造函数时，子类必须显式调用父类的构造函数
 		// TODO Auto-generated constructor stub
 	}
 	
@@ -86,7 +86,7 @@ public class InheritedTest3 {
 
 class Student2 extends Person2{
 	public Student2(String name){
-		super(name);  //����д�ڹ��캯���ĵ�һ�У��ȳ�ʼ�����࣬���ʼ������
+		super(name);  //必须写在构造函数的第一行，先初始化父类，后初始化子类
 	}
 }*/
 

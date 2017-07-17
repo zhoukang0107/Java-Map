@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.TreeSet;
 
 /**
- * ¼¯ºÏ¿ò¼Ü¹¤¾ßÀà
+ * é›†åˆæ¡†æ¶å·¥å…·ç±»
  * 
  *
  */
@@ -98,7 +98,7 @@ public class CollectionsTest {
 				min = mid + 1;
 			}
 		}
-		return -min-1; //²åÈëµã
+		return -min-1; //æ’å…¥ç‚¹
 	}
 	
 	public static int halfSearch2(List<String> list,String key,Comparator<String> comp){
@@ -118,11 +118,11 @@ public class CollectionsTest {
 				min = mid + 1;
 			}
 		}
-		return -min-1; //²åÈëµã
+		return -min-1; //æ’å…¥ç‚¹
 	}
 	/*
-	 * fill·½·¨¿ÉÒÔ½«listÖĞËùÓĞÔªËØÌæ»»³ÉÖ¸¶¨ÔªËØ£¬
-	 * ½«listÖĞ²¿·ÖÔªËØÌæ»»³ÉÖ¸¶¨ÔªËØ£¿£¿
+	 * fillæ–¹æ³•å¯ä»¥å°†listä¸­æ‰€æœ‰å…ƒç´ æ›¿æ¢æˆæŒ‡å®šå…ƒç´ ï¼Œ
+	 * å°†listä¸­éƒ¨åˆ†å…ƒç´ æ›¿æ¢æˆæŒ‡å®šå…ƒç´ ï¼Ÿï¼Ÿ
 	 */
 	public static void fillTest(){
 		List<String> list = new ArrayList<String>();
@@ -155,11 +155,11 @@ public class CollectionsTest {
 		Collections.reverse(list);
 		System.out.println(list);
 		Collections.shuffle(list);
-		System.out.println("Ëæ»úÖÃ»»ÁĞ±íÎ»ÖÃshuffle:"+list);
+		System.out.println("éšæœºç½®æ¢åˆ—è¡¨ä½ç½®shuffle:"+list);
 	}
 	
 	public static void reverseOrderTest(){
-		//Collections.reverseOrder(new StrLength())·µ»ØÒ»¸öÓëStrLengthÏà·´µÄ±È½ÏÆ÷
+		//Collections.reverseOrder(new StrLength())è¿”å›ä¸€ä¸ªä¸StrLengthç›¸åçš„æ¯”è¾ƒå™¨
 		TreeSet<String> sets = new TreeSet<String>(Collections.reverseOrder(new StrLength()));
 		sets.add("list1sdgsg");
 		sets.add("list4");

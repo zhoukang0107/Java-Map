@@ -4,7 +4,7 @@ import java.util.Iterator;
 import java.util.List;
 
 /**
- * È¥³ıarraylistÖĞÖØ¸´ÔªËØ
+ * å»é™¤arraylistä¸­é‡å¤å…ƒç´ 
  * @author kang
  *
  */
@@ -15,7 +15,7 @@ public class ArrayListTest {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		//È¥³ıarraylistÖĞÖØ¸´×Ö·û´®ÔªËØ
+		//å»é™¤arraylistä¸­é‡å¤å­—ç¬¦ä¸²å…ƒç´ 
 		ArrayList<String> list = new ArrayList<>();
 		list.add("java01");
 		list.add("java02");
@@ -26,7 +26,7 @@ public class ArrayListTest {
 		list.add("java01");
 		List<String> newlist = singleArrayList(list);
 		System.out.println(newlist);
-		//È¥³ıÖØ¸´¶ÔÏó
+		//å»é™¤é‡å¤å¯¹è±¡
 		ArrayList<Person> list1 = new ArrayList<>();
 		list1.add(new Person("java01"));
 		list1.add(new Person("java02"));
@@ -40,7 +40,7 @@ public class ArrayListTest {
 		while(it.hasNext()){
 			System.out.println(it.next().getName());
 		}
-		//È¥³ıarraylistÖĞÖØ¸´×Ö·û´®ÔªËØ
+		//å»é™¤arraylistä¸­é‡å¤å­—ç¬¦ä¸²å…ƒç´ 
 				ArrayList<String> list2 = new ArrayList<>();
 				list2.add(new String("java01"));
 				list2.add(new String("java02"));

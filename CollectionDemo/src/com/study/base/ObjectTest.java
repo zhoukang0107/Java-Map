@@ -1,16 +1,16 @@
 package com.study.base;
 /**
- * Object�ࣺ
- * �����ж����ֱ�ӻ��Ӹ��࣬�����ж��������ж��󶼾߱��Ĺ���
+ * Object类：
+ * 是所有对象的直接或间接父类，该类中定义了所有对象都具备的功能
  * 
- * equals:java��Ϊ���ж��󶼾߱��Ƚ��ԣ������Խ��бȽ�
- * Ĭ�ϱȽϵ�����������ĵ�ַ
+ * equals:java认为所有对象都具备比较性，都可以进行比较
+ * 默认比较的是两个对象的地址
  * 
- * Object�����Ѿ��ṩ�˶Զ����Ƿ���ͬ�ıȽϺ�����
- * ����Զ�������Ҳ�бȽ���ͬ�Ĺ��ܣ�û�б�Ҫ���¶���
- * ֻҪ��Ϯ�����еĹ��ܣ������Լ����бȽ����ݼ��ɣ�����Ǹ���
+ * Object类中已经提供了对对象是否相同的比较函数。
+ * 如果自定义类中也有比较相同的功能，没有必要重新定义
+ * 只要沿袭父类中的功能，建立自己特有比较内容即可，这就是覆盖
  * 
- * toString:���ж��󶼿��Ա���ַ�����ӡ  ������@����hashCode()
+ * toString:所有对象都可以变成字符串打印  所属类@对象hashCode()
  * 
  * 
  * hashCode:
@@ -20,15 +20,15 @@ package com.study.base;
  * 
  * A.class 
  * B.class
- * ��Щclass�ļ���������
- * ��Щ�ļ����й��캯��
- * һ�㷽��
+ * 这些class文件都有名称
+ * 这些文件都有构造函数
+ * 一般方法
  * 
- * Class��������Щclass�ļ�      ���ļ�����
- * getName()  //��ȡclass�ļ�������
+ * Class来描述这些class文件      类文件对象
+ * getName()  //获取class文件的名称
  */
 
-class Demo{// extends Object{ //��ʽ����
+class Demo{// extends Object{ //隐式包含
 	protected int num;
 	public Demo(int num) {
 		super();

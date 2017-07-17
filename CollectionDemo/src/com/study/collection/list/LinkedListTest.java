@@ -2,9 +2,9 @@ package com.study.collection.list;
 import java.util.LinkedList;
 
 /*
- * Ê¹ÓÃLinkedListÄ£ÄâÒ»¸ö¶ÑÕ»»òÕß¶ÓÁĞÊı¾İ½á¹¹
- * ¶ÑÕ»£ººó½øÏÈ³ö
- * ¶ÓÁĞ£ºÏÈ½øÏÈ³öFirst in first out fifo
+ * ä½¿ç”¨LinkedListæ¨¡æ‹Ÿä¸€ä¸ªå †æ ˆæˆ–è€…é˜Ÿåˆ—æ•°æ®ç»“æ„
+ * å †æ ˆï¼šåè¿›å…ˆå‡º
+ * é˜Ÿåˆ—ï¼šå…ˆè¿›å…ˆå‡ºFirst in first out fifo
  */
 
 

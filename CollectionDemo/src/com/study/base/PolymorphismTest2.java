@@ -1,40 +1,40 @@
 package com.study.base;
 /**
- * ĞèÇó£ºÊı¾İ¿â²Ù×÷
- * Êı¾İÊ±£ºÓÃ»§ĞÅÏ¢
- * 1¡¢Á´½ÓÊı¾İ¿â  JDBC Hibernate
- * 2¡¢²Ù×÷Êı¾İ¿â
+ * éœ€æ±‚ï¼šæ•°æ®åº“æ“ä½œ
+ * æ•°æ®æ—¶ï¼šç”¨æˆ·ä¿¡æ¯
+ * 1ã€é“¾æ¥æ•°æ®åº“  JDBC Hibernate
+ * 2ã€æ“ä½œæ•°æ®åº“
  *    c create r read u update d delete
- * 3¡¢¹Ø±ÕÊı¾İ¿âÁ´½Ó
+ * 3ã€å…³é—­æ•°æ®åº“é“¾æ¥
  * 
  * 
  * 
  * 
  * class UserInfoByJDBC{
  * 		public void add(User user){
- * 			1¡¢JDBCÁ´½ÓÊı¾İ¿â
- * 			2¡¢Ê¹ÓÃsqlÌí¼ÓÊı¾İ
- * 			3¡¢¹Ø±ÕÁ¬½Ó
+ * 			1ã€JDBCé“¾æ¥æ•°æ®åº“
+ * 			2ã€ä½¿ç”¨sqlæ·»åŠ æ•°æ®
+ * 			3ã€å…³é—­è¿æ¥
  * 		}
  * 
  * 		public void delete(User user){
- * 			1¡¢JDBCÁ´½ÓÊı¾İ¿â
- * 			2¡¢Ê¹ÓÃsqlÓï¾äÉ¾³ıÊı¾İ
- * 			3¡¢¹Ø±ÕÁ¬½Ó	
+ * 			1ã€JDBCé“¾æ¥æ•°æ®åº“
+ * 			2ã€ä½¿ç”¨sqlè¯­å¥åˆ é™¤æ•°æ®
+ * 			3ã€å…³é—­è¿æ¥	
  * 		}
  * }
  * 
  * class UserInfoByHibernate{
  * 		public void add(User user){
- * 			1¡¢HibernateÁ´½ÓÊı¾İ¿â
- * 			2¡¢Ê¹ÓÃsqlÌí¼ÓÊı¾İ
- * 			3¡¢¹Ø±ÕÁ¬½Ó
+ * 			1ã€Hibernateé“¾æ¥æ•°æ®åº“
+ * 			2ã€ä½¿ç”¨sqlæ·»åŠ æ•°æ®
+ * 			3ã€å…³é—­è¿æ¥
  * 		}
  * 
  * 		public void delete(User user){
- * 			1¡¢HibernateÁ´½ÓÊı¾İ¿â
- * 			2¡¢Ê¹ÓÃsqlÓï¾äÉ¾³ıÊı¾İ
- * 			3¡¢¹Ø±ÕÁ¬½Ó	
+ * 			1ã€Hibernateé“¾æ¥æ•°æ®åº“
+ * 			2ã€ä½¿ç”¨sqlè¯­å¥åˆ é™¤æ•°æ®
+ * 			3ã€å…³é—­è¿æ¥	
  * 		}
  * }
  * 
@@ -50,29 +50,29 @@ package com.study.base;
  * 
  * class UserInfoByJDBC implements UserInfoDao{
  * 		public void add(User user){
- * 			1¡¢JDBCÁ´½ÓÊı¾İ¿â
- * 			2¡¢Ê¹ÓÃsqlÌí¼ÓÊı¾İ
- * 			3¡¢¹Ø±ÕÁ¬½Ó
+ * 			1ã€JDBCé“¾æ¥æ•°æ®åº“
+ * 			2ã€ä½¿ç”¨sqlæ·»åŠ æ•°æ®
+ * 			3ã€å…³é—­è¿æ¥
  * 		}
  * 
  * 		public void delete(User user){
- * 			1¡¢JDBCÁ´½ÓÊı¾İ¿â
- * 			2¡¢Ê¹ÓÃsqlÓï¾äÉ¾³ıÊı¾İ
- * 			3¡¢¹Ø±ÕÁ¬½Ó	
+ * 			1ã€JDBCé“¾æ¥æ•°æ®åº“
+ * 			2ã€ä½¿ç”¨sqlè¯­å¥åˆ é™¤æ•°æ®
+ * 			3ã€å…³é—­è¿æ¥	
  * 		}
  * }
  * 
  * class UserInfoByHibernate implements UserInfoDao{
  * 		public void add(User user){
- * 			1¡¢HibernateÁ´½ÓÊı¾İ¿â
- * 			2¡¢Ê¹ÓÃsqlÌí¼ÓÊı¾İ
- * 			3¡¢¹Ø±ÕÁ¬½Ó
+ * 			1ã€Hibernateé“¾æ¥æ•°æ®åº“
+ * 			2ã€ä½¿ç”¨sqlæ·»åŠ æ•°æ®
+ * 			3ã€å…³é—­è¿æ¥
  * 		}
  * 
  * 		public void delete(User user){
- * 			1¡¢HibernateÁ´½ÓÊı¾İ¿â
- * 			2¡¢Ê¹ÓÃsqlÓï¾äÉ¾³ıÊı¾İ
- * 			3¡¢¹Ø±ÕÁ¬½Ó	
+ * 			1ã€Hibernateé“¾æ¥æ•°æ®åº“
+ * 			2ã€ä½¿ç”¨sqlè¯­å¥åˆ é™¤æ•°æ®
+ * 			3ã€å…³é—­è¿æ¥	
  * 		}
  * }
  * 

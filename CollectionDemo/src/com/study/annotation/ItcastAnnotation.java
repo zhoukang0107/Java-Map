@@ -6,24 +6,24 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * Ôª×¢½â£º
+ * Ôª×¢ï¿½â£º
  * @Retention
- * ×¢½âµÄÉúÃüÖÜÆÚ£º
+ * æ³¨è§£çš„ç”Ÿå‘½å‘¨æœŸï¼š
  * RetentionPolicy.SOURCE
- * Ô´ÎÄ¼ş£ºJavac¿ÉÄÜ½«Ô´ÎÄ¼şÖĞµÄ×¢½âÈ¥µô
+ * æºæ–‡ä»¶ï¼šJavacå¯èƒ½å°†æºæ–‡ä»¶ä¸­çš„æ³¨è§£å»æ‰
  * RetentionPolicy.CLASS
- * classÎÄ¼ş£ºÀà¼ÓÔØÆ÷¿ÉÄÜ½«classÖĞµÄ×¢½âÈ¥µô
+ * classæ–‡ä»¶ï¼šç±»åŠ è½½å™¨å¯èƒ½å°†classä¸­çš„æ³¨è§£å»æ‰
  * RetentionPolicy.RUNTIME
- * ÄÚ´æÖĞµÄ×Ö½ÚÂë
+ * å†…å­˜ä¸­çš„å­—èŠ‚ç 
  *
- * Ä¬ÈÏ±£ÁôÔÚCLASSÖĞ
+ * é»˜è®¤ä¿ç•™åœ¨CLASSä¸­
  * 
  * 
  * @Target({ElementType.METHOD,ElementType.TYPE})
- * ¶¨Òå×¢½â¿ÉÒÔ×÷ÓÃµÄ¶ÔÏó
+ * å®šä¹‰æ³¨è§£å¯ä»¥ä½œç”¨çš„å¯¹è±¡
  * 
  * 
- * ×¢½âµÄÊôĞÔ£º
+ * æ³¨è§£çš„å±æ€§ï¼š
  * 
  * 
  * 
@@ -32,10 +32,10 @@ import java.lang.annotation.Target;
 @Target({ElementType.METHOD,ElementType.TYPE})
 @Retention(RetentionPolicy.RUNTIME)
 public @interface ItcastAnnotation {
-	//¶¨ÒåÊôĞÔ
-	String color() default "blue";  //colorÊôĞÔÉèÖÃÄ¬ÈÏÖµ
-	String value();//Èç¹ûÖ»ÓĞvalueÊôĞÔĞèÒªÉèÖµÊ±£¬¿ÉÒÔ²»Ğ´"value="
+	//å®šä¹‰å±æ€§
+	String color() default "blue";  ////colorå±æ€§è®¾ç½®é»˜è®¤å€¼Öµ
+	String value();                //ï¿½ï¿½ï¿½Ö»ï¿½ï¿½valueï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½ÖµÊ±ï¿½ï¿½ï¿½ï¿½ï¿½Ô²ï¿½Ğ´"value="	
 	int[] arrayAttr() default {2,3,4};
-	ElementType getElementType() default ElementType.METHOD;  //Ã¶¾ÙÀàĞÍÊôĞÔ
+	ElementType getElementType() default ElementType.METHOD;  //æšä¸¾ç±»å‹å±æ€§
 	MetaAnnotation annotationAttr() default @MetaAnnotation("value");
 }
