@@ -6,6 +6,7 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
+ * 元注解：
  * @Retention
  * 注解的生命周期：
  * RetentionPolicy.SOURCE
@@ -33,7 +34,7 @@ import java.lang.annotation.Target;
 public @interface ItcastAnnotation {
 	//定义属性
 	String color() default "blue";  //color属性设置默认值
-	String value();
+	String value();//如果只有value属性需要设值时，可以不写"value="
 	int[] arrayAttr() default {2,3,4};
 	ElementType getElementType() default ElementType.METHOD;  //枚举类型属性
 	MetaAnnotation annotationAttr() default @MetaAnnotation("value");

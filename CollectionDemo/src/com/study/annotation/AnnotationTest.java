@@ -1,4 +1,23 @@
 package com.study.annotation;
+/**
+ * 注解：
+ * @Override   覆盖父类方法  如果覆盖的方法没有覆盖父类方法编译器报错
+ * @SuppressWarnings   
+ * @Deprecated    此注解表明该函数已过期，不建议使用
+ * 
+ * 
+ * 注解相当于一种标记，在程序中加了注解就等于为程序打上了某种标记，没加，则等于没有某种标记，
+ * 以后，javac编译器，开发工具和其他程序可以用反射来了解你的类以及各种元素上有何种标记，看你
+ * 有什么标记就去干相应的事，标记可以加在包，类，方法，方法的参数以及局部变量上
+ *
+ * 
+ * 注解类
+ * 引用了注解类的类
+ * 对应用了注解类的类进行反射操作的类
+ * 
+ * 
+ * 
+ */
 
 @ItcastAnnotation(annotationAttr=@MetaAnnotation("fix"),color="red",value="abc",arrayAttr={1,2,3})
 public class AnnotationTest {
