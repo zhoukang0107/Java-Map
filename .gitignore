@@ -1,2 +1,4 @@
 JavaMap/out/*
 JavaMap/.idea/workspace.xml
+/bin/
+.project
