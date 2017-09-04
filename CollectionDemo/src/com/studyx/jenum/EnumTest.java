@@ -3,7 +3,7 @@ package com.studyx.jenum;
 public class EnumTest {
 
 	/**
-	 * 
+	 * 如果枚举只有一个成员时，就可以作为一种单例的实现方式
 	 * 
 	 */
 	public static void main(String[] args) {
