@@ -1,7 +1,7 @@
 package com.study.architecture.abstractfactory;
 
 /**
- * Created by Zack on 2017/6/1.
+ * AndroidFactory专门用来创建产品AndroidApi
  */
 public class AndroidFactory implements IFactory {
     @Override

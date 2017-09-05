@@ -33,4 +33,5 @@ public class OrderDealFactory {
             System.out.println("number:"+iOrder.getOrderNumber()+"  order:"+iOrder);
         }
     }
+
 }

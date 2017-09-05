@@ -11,7 +11,7 @@ package com.study.architecture.simplefactory;
  */
 public class Factory {
 
-    public static Api create(int type){
+    public static Api create(int type){ //违反了开闭原则
         Api api = null;
         switch (type){
             case 1:

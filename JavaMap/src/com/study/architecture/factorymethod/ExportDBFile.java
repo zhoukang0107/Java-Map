@@ -1,6 +1,7 @@
 package com.study.architecture.factorymethod;
 
 /**
+ * 数据库文件
  * Created by Zack on 2017/5/29.
  */
 public class ExportDBFile implements ExportFileApi {
