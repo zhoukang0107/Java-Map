@@ -6,6 +6,7 @@ package com.studyx.jenum;
  *
  */
 public abstract class WeekDay1 {
+	private WeekDay1(){}
 	public static WeekDay1 SUN = new WeekDay1() {
 		
 		@Override
